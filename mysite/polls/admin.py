@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 from django.contrib import admin
-from .models import Question, Choice
+from .models import Question, Choice, User
 
 # 豪华型
 # class ChoiceInline(admin.StackedInline):
@@ -40,5 +40,5 @@ class QuestionAdimin(admin.ModelAdmin):
 	pass
 
 admin.site.register(Question, QuestionAdimin)
-# admin.site.register(Choice)
+admin.site.register(User)
 
