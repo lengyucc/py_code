@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 from django.contrib import admin
-from .models import Question, Choice, Person
+from .models import Question, Choice
 
 # 豪华型
 # class ChoiceInline(admin.StackedInline):
