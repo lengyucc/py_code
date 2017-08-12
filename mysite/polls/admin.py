@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 from django.contrib import admin
-from .models import Question, Choice, User
+from .models import Question, Choice, Person
 
 # 豪华型
 # class ChoiceInline(admin.StackedInline):
@@ -37,8 +37,7 @@ class QuestionAdimin(admin.ModelAdmin):
 	search_fields = ['question_text']
 	# 9.另存
 	# save_as = True
-	pass
+	# pass
 
 admin.site.register(Question, QuestionAdimin)
-admin.site.register(User)
 
